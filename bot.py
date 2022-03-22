@@ -5,13 +5,11 @@ import os
 import random
 import re
 
-import dotenv
 import imdb
 import telebot
 
 from OMDB import get_movie_info
 
-dotenv.load_dotenv()
 
 token = os.getenv("TOKEN")
 bot = telebot.TeleBot(token)
@@ -35,7 +33,7 @@ def help_command(message):
                    "/start - start command\n" \
                    "/movie_recommend - movie recommendation\n" \
                    "/tv_series_recommend - tv series recommendation\n" \
-                   "your_title - typical usage"
+                   "your_title - show rating"
     bot.send_message(chat_id=message.chat.id, text=help_message)
 
 
@@ -58,8 +56,8 @@ def title_information(your_title):
                         f"Ratings:\n{rating_string}"
                         )
         else:
-            message_text = f"'{movie_name}' не найден. Введите название на \
-                            английском языке."
+            message_text = f"'{movie_name}' не найден. Введите корректное \
+            название на английском языке."
 
         bot.send_message(chat_id=your_title.chat.id, text=message_text)
 

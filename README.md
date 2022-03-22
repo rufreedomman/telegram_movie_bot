@@ -35,7 +35,6 @@ source venv/bin/activate
 pip install pyTelegramBotAPI
 pip install IMDbPY
 pip install requests
-pip install python-dotenv
 
 или
 
@@ -43,8 +42,6 @@ pip install -r requirements.txt
 ```
 
 Необходимо использовать Ваш токен Telegram бота, сконфигурированный @BotFather и API, полученный на https://www.omdbapi.com/
-
-MovieBot размещен на [Heroku](https://signup.heroku.com/?c=7013A000000ib1xQAA&gclid=Cj0KCQjw4s7qBRCzARIsAImcAxYsAykyEAEp-XvXf4296_Fwvs1rHwDQV_CmB5MD8p6RZ52xdYQNV6gaAmKgEALw_wcB).
 
 ## Начало работы с Telegram ботами
 

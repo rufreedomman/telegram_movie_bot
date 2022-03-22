@@ -3,11 +3,9 @@
 
 import os
 
-import dotenv
 import imdb
 import requests
 
-dotenv.load_dotenv()
 
 instance = imdb.IMDb()
 
